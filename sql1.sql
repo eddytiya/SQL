@@ -1,37 +1,24 @@
-CREATE DATABASE temp1;
-create database temp2;
-DROP DATABASE college;
-
 CREATE DATABASE IF NOT EXISTS college;
+USE college;
 
-drop database temp1;
-DROP DATABASE temp2;#deleting database
-
-USE college;#using the created database college
-
-#creating a table
 CREATE TABLE student(
-   id INT PRIMARY KEY,
-   name VARCHAR(50),
-   age INT NOT NULL
+rollno INT PRIMARY KEY,
+name VARCHAR(50)
 );
 
-#adding data into the table
+#select and view
 
-INSERT INTO student VALUES(1,"ADITYA",21);
-INSERT INTO student VALUES(2,"VIRAT",35);
-
-#PRINTING TABLE
 SELECT * FROM student;
 
-#DB REALATED QUERIES
-DROP DATABASE IF EXISTS COMPANY;
+INSERT INTO student(rollno,name)
+VALUES (88,"ADITYA"),(89,"SAHIL");
 
-SHOW DATABASES;
+SELECT * FROM student;
 
-SHOW TABLES;
+#FOR SINGLE values
+INSERT INTO student VALUES (91,"NAWAZ");
 
-#TABLE RELATED QUERIES
+SELECT * FROM student;
 
 
 
