@@ -99,3 +99,6 @@ ONE OR MORE COLUMNS
 SELECT city,count(name)
 FROM STUDENT
 group BY CITY;
+
+#average marks in each city in ascending order
+SELECT CITY,avg(marks) FROM student GROUP BY CITY ORDER BY avg(marks) ASC;
