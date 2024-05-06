@@ -56,3 +56,16 @@ UPDATE student
 SET marks=marks+1;
 
 select * from student;
+
+#deletingto delete existing rows
+#student whose marks are below 36 will get deleted
+
+DELETE FROM student
+WHERE marks<34;
+
+select * from student;
+
+
+
+
+
